@@ -1,0 +1,92 @@
+﻿@page
+@model PotenzaggSite.Views.Home.PotenzaLoversModel
+@{
+}
+<main>
+
+
+
+
+    <!-- breadcrumb-area -->
+    <div class="breadcrumb-area breadcrumb-bg game-overview-breadcrumb">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-lg-6">
+                    <div class="game-overview-img">
+                        <img src="img/images/game_overview_thumb.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-6">
+                    <div class="breadcrumb-content text-center text-lg-left pl-80">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">pages</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">game single</li>
+                            </ol>
+                        </nav>
+                        <h2>POTENZA <span>LOVERS</span></h2>
+
+                        <a href="@Url.Action("FormPotenzaLovers", "Home", new { area = "" })" class="btn btn-style-two">Inscreva-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb-area-end -->
+    <!-- game-single-area -->
+    <section class="game-single-area pt-120 pb-180">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="game-single-content game-overview-content">
+                        <div class="upcoming-game-head">
+                            <div class="uc-game-head-title">
+
+                                <h4>Potenza Lovers<span>Comunidade Anti Rage</span></h4>
+                            </div>
+                        </div>
+                        <p>
+                            <span>O objetivo dessa inscrição é filtrar individualmente cada novo integrante</span> para que nossa comunidade seja cada vez mais inclusiva, respeitosa e segura para todos.
+                        </p>
+                        <p style="font-size: 25px;">
+                            <strong>
+                                Objetivos / Regras Comunidade:
+                                <br />
+                                <br />
+                                1. Montar uma comunidade inclusiva e respeitosa que dê espaço a todos reservando um espaço especial para meninas e público LGBTQIA+;
+                                <br />
+                                <br />
+                                2. TOLERÂNCIA ZERO PARA assédio, machismo, xenofobia, homofobia, transfobia e qualquer tipo de discriminação, preconceito ou discurso de ódio;
+                                <br />
+                                <br />
+                                3. Reunir uma galera legal e respeitosa para jogarmos, aprendermos e nos divertirmos num ambiente não tóxico;
+                                <br />
+                                <br />
+                                4. Encaminhar nossos membros para times do cenário competitivo (não obrigatório)
+                                <br />
+                                <br />
+                                5. Lives dando dicas e ensinando de segunda a sábado às 20:30;
+                                <br />
+                                <br />
+                                6. Personalizadas exclusiva para nossa comunidade com narração, comentários e feedback do coach no final da partida;
+                                <br />
+                                <br />
+                                7. Comunidade exclusiva de Wild Rift;
+
+                            </strong>
+                        </p>
+
+                        <a href="@Url.Action("FormPotenzaLovers", "Home", new { area = "" })" class="btn btn-style-two">Inscreva-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+</main>

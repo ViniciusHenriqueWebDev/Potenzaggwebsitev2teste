@@ -1,0 +1,198 @@
+﻿@model PotenzaggSite.Models.Usuario
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main>
+
+    <!-- área-principal-->
+    <section class="third-banner-bg">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="third-banner-img wow bounceInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceInDown;">
+                        <img src="img/images/third_banner_img.png" alt="">
+                    </div>
+                    <div class="third-banner-content text-center wow bounceInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceInUp;">
+                        <h2>POTENZA <span>GG</span></h2>
+                        <h6>chegou a sua vez de viver de games</h6>
+                        <!--Adendo: criar uma página geral de cursos, como um catálogo da potenza.-->
+                        <a href="@Url.Action("Formacoes", "Home", new { area = "" })" class="btn rotated-btn">CONHECER CURSOS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider-area-end -->
+
+
+
+    <!-- home-four-area-bg -->
+    <div class="home-four-area-bg">
+        <div class="bg"></div>
+        <!-- latest-games-area -->
+        <section class="latest-games-area home-four-latest-games pt-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="section-title home-four-title mb-50">
+                            <h2>CURSOS <span>POTENZA.GG</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="latest-games-active owl-carousel">
+                            <div class="latest-games-items mb-30">
+                                <div class="latest-games-thumb">
+                                    <a href="#"><img src="~/img/slider-cursos/marketing-digital.png" alt=""></a>
+                                </div>
+                                <div class="latest-games-content">
+                                    <div class="lg-tag">
+                                        <a href="#">Marketing</a>
+                                    </div>
+                                    <h4><a href="#">Formação <span>Marketing Descomplicado</span></a></h4>
+                                </div>
+                            </div>
+                            <div class="latest-games-items mb-30">
+                                <div class="latest-games-thumb">
+                                    <a href="#"><img src="~/img/slider-cursos/mentoria-wildrift.png" alt=""></a>
+                                </div>
+                                <div class="latest-games-content">
+                                    <div class="lg-tag">
+                                        <a href="#">Wild Rift</a>
+                                    </div>
+                                    <h4><a href="#">Formação <span>Mentoria of Legends</span></a></h4>
+                                </div>
+                            </div>
+                            <div class="latest-games-items mb-30">
+                                <div class="latest-games-thumb">
+                                    <a href="#"><img src="~/img/slider-cursos/live-for-stream.png" alt=""></a>
+                                </div>
+                                <div class="latest-games-content">
+                                    <div class="lg-tag">
+                                        <a href="#">Streamers</a>
+                                    </div>
+                                    <h4><a href="#">Formação <span>Live for Stream</span></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- home-four-area-bg-end -->
+
+    <section class="about-us-area pt-90 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-0 order-lg-2">
+                    <div class="about-img">
+                        <img src="~/img/images/streamer-video.png" alt="">
+                        <a href="https://vimeo.com/475464859" class="popup-video"><img src="img/icon/play_btn.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-title title-style-two mb-45">
+                        <h2>SOBRE A <span>POTENZA GG</span></h2>
+                    </div>
+                    <div class="about-content">
+                        <p>
+                            Tudo que fazemos vem do mais genuíno
+                            sentimento de amor e gratidão aos games
+                            que muito nos ensinaram sem nem
+                            percebermos que estávamos aprendendo,
+                            por isso como escola gamer desafiamos o
+                            modelo tradicional de educação formando
+                            profissionais dinâmicos através de um
+                            conteúdo focado na prática, divertido e sem
+                            enrolação.
+                            <br />
+                            De gamer para gamer
+                        </p>
+                        <div class="about-btn">
+                            <a href="@Url.Action("Sobrenos","Home")" class="btn">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- team-area -->
+    <section class="team-area team-bg">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="third-section-title text-center mb-60">
+                        <h2>INSTRUTORES <span>POTENZA GG</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    <div class="third-team-item text-center mb-30">
+                        <div class="third-team-img">
+                            <img src="img/professores/Professor Barbaro.png" alt="">
+                        </div>
+                        <div class="third-team-content">
+                            <div class="main-bg"></div>
+                            <div class="hover-bg"></div>
+                            <h5><a href="#">Bárbaro Corrêa</a></h5>
+                            <span>Live for Stream</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    <div class="third-team-item text-center mb-30">
+                        <div class="third-team-img">
+                            <img src="img/professores/ProfessorGuinho.png" alt="">
+                        </div>
+                        <div class="third-team-content">
+                            <div class="main-bg"></div>
+                            <div class="hover-bg"></div>
+                            <h5><a href="#">Igor Medeiros</a></h5>
+                            <span>Mentoria of Legends: Wild Rift</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    <div class="third-team-item text-center mb-30">
+                        <div class="third-team-img">
+                            <img src="img/professores/ProfessorVinicius.png" alt="">
+                        </div>
+                        <div class="third-team-content">
+                            <div class="main-bg"></div>
+                            <div class="hover-bg"></div>
+                            <h5><a href="#">Vinicius Henrique</a></h5>
+                            <span>Live for Stream</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team-area-end -->
+    <!-- brand-area -->
+    <div class="brand-area t-brand-bg">
+        <div class="container custom-container">
+            <div class="row s-brand-active">
+                <div class="col-12">
+                    <div class="t-brand-item">
+                        <img src="img/brand/logo-digital-battlegrounds.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="t-brand-item">
+                        <img src="img/brand/logo-noping-png.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brand-area-end -->
+
+</main>

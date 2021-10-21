@@ -1,0 +1,361 @@
+﻿@model PotenzaggSite.Models.Usuario
+
+@{
+    ViewData["Title"] = "MentoriaOfLegends";
+    var msg = TempData["Message"] as string;
+}
+
+<main>
+    <!-- slider-area -->
+    <section class="slider-area">
+        <div class="slider-active">
+            <div class="single-slider slider-bg slider-style-two">
+                <div class="container-fluid container-full-padding">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7 col-md-11">
+                            <div class="slider-content">
+                                <h6 data-animation="fadeInUp" data-delay=".4s">Formação</h6>
+                                <h2 data-animation="fadeInUp" data-delay=".4s">MENTORIA OF <span>LEGENDS</span></h2>
+                                <p data-animation="fadeInUp" data-delay=".6s">
+                                    Aprenda de uma Vez a Jogar League of Legends: Wild Rift
+                                    com uma visão de Jogador Profissional de eSports, e como consequência eleve seu objetivo
+                                    ao tão esperado Challenger!
+                                    <br />
+                                    <br />
+                                    <a href="#" class="btn btn-style-two" data-animation="fadeInUp" data-delay=".8s">COMPRAR AGORA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-img" data-animation="slideInRightS" data-delay=".6s"><img src="~/img/images/streamer-bg-1.png" alt=""></div>
+                <div class="slider-img slider-img2" data-animation="slideInLeftS" data-delay=".6s"><img src="~/img/images/streamer-bg-2.png" alt=""></div>
+                <div class="slider-circle-shape"><img src="~/img/slider/slider_circle.png" alt="" class="rotateme"></div>
+            </div>
+        </div>
+    </section>
+    <!-- slider-area-end -->
+    <!--Inicio Formulário de Inscrição -->
+    <section class="contact-area third-contact-bg">
+        <div class="container custom-container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="third-contact-wrap">
+                        <div class="third-title-style">
+                            <div class="inner text-left">
+                                <h1 style="font-size: 30px;">
+                                    Faça já seu cadastro! Você terá a primeira aula grátis e poderá 
+                                    mergulhar de vez nesse universo de League of Legends: Wild Rift.
+                                </h1>
+                                <br />
+                                <iframe title="vimeo-player" src="https://player.vimeo.com/video/542164005?h=63f06c9ad7" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @Html.Partial("_CadastroMentoriaOfLegends")
+            </div>
+        </div>
+    </section>
+    <!--Finalização Formulario de Inscrição-->
+    <!-- new-games-area -->
+    <section class="released-games-area gray-bg pt-115 pb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="section-title title-style-three text-center mb-20">
+                        <h2>O que eu vou <span>Aprender?</span></h2>
+                        <p>
+                            Bem Vindo a Summoners Rift, seus trollzinhos! Você está preparado para essa grande jornada em busca do High Elo? Então escolha seu campeão, dá aquele target ban no champ adversário e vem com o Guinho pra essa mentoria que vai te ajudar a alcançar o topo do League of Legends: Wild Rift!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xl-8 col-lg-12">
+                    <div class="released-game-active">
+                        <div class="released-game-carousel">
+                            <div class="released-game-item">
+                                <div class="released-game-item-bg"></div>
+                                <div class="released-game-img">
+                                    <img src="~/img/images/lanes/bem-vindo.png" alt="">
+                                </div>
+                                <div class="released-game-content">
+                                    <div class="released-game-rating">
+                                        <h5>Classificação :</h5>
+                                        <div class="released-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <h4>Módulo 1:<br />Bem vindo a Mentoria of Legends</h4>
+
+                                    <div class="released-game-list mb-15">
+                                        <ul>
+                                            <li><span>Quantidade de Aulas :</span>1 Aula</li>
+                                            <li><span>Metodologia: </span>Ensino a Distância</li>
+                                            <li><span>Requisitos :</span>Smartphone Android & IOS</li>
+                                        </ul>
+                                    </div>
+                                    <p></p>
+                                    <a href="https://pay.hotmart.com/S55981393L" class="btn btn-style-two">Assinar Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Toplaner-->
+                        <div class="released-game-carousel">
+                            <div class="released-game-item">
+                                <div class="released-game-item-bg"></div>
+                                <div class="released-game-img">
+                                    <img src="~/img/images/lanes/toplaner.png" alt="">
+                                </div>
+                                <div class="released-game-content">
+                                    <div class="released-game-rating">
+                                        <h5>Classificação :</h5>
+                                        <div class="released-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <h4>Módulo 2:<br /> Rota do Barão: TopLaner</h4>
+                                    <div class="released-game-list mb-15">
+                                        <ul>
+                                            <li><span>Quantidade de Aulas :</span>4 Aulas</li>
+                                            <li><span>Metodologia: </span>Ensino a Distância</li>
+                                            <li><span>Requisitos :</span>Smartphone Android & IOS</li>
+                                        </ul>
+                                    </div>
+                                    <p>Nesse módulo, você irá aprender tudo sobre como ser um ótimo jogador na rota do barão nashor.</p>
+                                    <a href="https://pay.hotmart.com/S55981393L" target="_blank" class="btn btn-style-two">Comprar Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Jungler-->
+                        <div class="released-game-carousel">
+                            <div class="released-game-item">
+                                <div class="released-game-item-bg"></div>
+                                <div class="released-game-img">
+                                    <img src="~/img/images/lanes/jungler.png" alt="">
+                                </div>
+                                <div class="released-game-content">
+                                    <div class="released-game-rating">
+                                        <h5>Classificação :</h5>
+                                        <div class="released-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <h4>Módulo 3:<br /> Rota da Selva: <span>Jungler</span></h4>
+                                    <div class="released-game-list mb-15">
+                                        <ul>
+                                            <li><span>Quantidade de Aulas :</span>4 Aulas</li>
+                                            <li><span>Metodologia: </span>Ensino a Distância</li>
+                                            <li><span>Requisitos :</span>Smartphone Android & IOS</li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        Nesse módulo, você irá aprender tudo sobre como ser um ótimo jogador na rota do meio./p>
+                                        <a href="https://pay.hotmart.com/S55981393L" class="btn btn-style-two">Comprar Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Midlaner-->
+                        <div class="released-game-carousel">
+                            <div class="released-game-item">
+                                <div class="released-game-item-bg"></div>
+                                <div class="released-game-img">
+                                    <img src="~/img/images/lanes/midlaner.png" alt="">
+                                </div>
+                                <div class="released-game-content">
+                                    <div class="released-game-rating">
+                                        <h5>Classificação :</h5>
+                                        <div class="released-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <h4>Módulo 4:<br /> Rota do Meio</h4>
+                                    <div class="released-game-list mb-15">
+                                        <ul>
+                                            <li><span>Quantidade de Aulas :</span>4 Aulas</li>
+                                            <li><span>Metodologia: </span>Ensino a Distância</li>
+                                            <li><span>Requisitos :</span>Smartphone Android & IOS</li>
+                                        </ul>
+                                    </div>
+                                    <p>Nesse módulo, você irá aprender tudo sobre como ser um ótimo jogador na rota do dragão ( ADCarry )</p>
+                                    <a href="https://pay.hotmart.com/S55981393L" class="btn btn-style-two">Comprar Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--ADCarry-->
+                        <div class="released-game-carousel">
+                            <div class="released-game-item">
+                                <div class="released-game-item-bg"></div>
+                                <div class="released-game-img">
+                                    <img src="~/img/images/lanes/adcarry.png" alt="">
+                                </div>
+                                <div class="released-game-content">
+                                    <div class="released-game-rating">
+                                        <h5>Classificação :</h5>
+                                        <div class="released-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <h4>Módulo 5:<br />Rota do Dragão: AdCarry</h4>
+                                    <div class="released-game-list mb-15">
+                                        <ul>
+                                            <li><span>Quantidade de Aulas :</span>5 Aulas</li>
+                                            <li><span>Metodologia: </span>Ensino a Distância</li>
+                                            <li><span>Requisitos :</span>Smartphone Android & IOS</li>
+                                        </ul>
+                                    </div>
+                                    <p>Nesse módulo, você irá aprender tudo sobre como ser um ótimo jogador na rota do dragão ( ADCarry )</p>
+                                    <a href="https://pay.hotmart.com/S55981393L" class="btn btn-style-two">Comprar Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Suporte-->
+                        <div class="released-game-carousel">
+                            <div class="released-game-item">
+                                <div class="released-game-item-bg"></div>
+                                <div class="released-game-img">
+                                    <img src="~/img/images/lanes/support.png" alt="">
+                                </div>
+                                <div class="released-game-content">
+                                    <div class="released-game-rating">
+                                        <h5>Classificação :</h5>
+                                        <div class="released-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <h4>Módulo 6:<br />Rota do Dragão: Suporte</h4>
+                                    <div class="released-game-list mb-15">
+                                        <ul>
+                                            <li><span>Quantidade de Aulas :</span>5 Aulas</li>
+                                            <li><span>Metodologia: </span>Ensino a Distância</li>
+                                            <li><span>Requisitos :</span>Smartphone Android & IOS</li>
+                                        </ul>
+                                    </div>
+                                    <p>Nesse módulo, você irá aprender tudo sobre como ser um ótimo jogador na rota do dragão ( ADCarry )</p>
+                                    <a href="https://pay.hotmart.com/S55981393L" class="btn btn-style-two">Comprar Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-12">
+                    <div class="released-game-nav">
+                        <div class="released-game-nav-item">
+                            <img src="~/img/images/lanes/ticket-lol-1.png" alt="">
+                        </div>
+                        <div class="released-game-nav-item">
+                            <img src="~/img/images/lanes/ticket-lol-2.png" alt="">
+                        </div>
+                        <div class="released-game-nav-item">
+                            <img src="~/img/images/lanes/ticket-lol-3.png" alt="">
+                        </div>
+                        <div class="released-game-nav-item">
+                            <img src="~/img/images/lanes/ticket-lol-4.png" alt="">
+                        </div>
+
+                        <div class="released-game-nav-item">
+                            <img src="~/img/images/lanes/ticket-lol-5.png" alt="">
+                        </div>
+
+                        <div class="released-game-nav-item">
+                            <img src="~/img/images/lanes/ticket-lol-6.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- new-games-area-end -->
+    <!-- gamers-area -->
+    <section class="just-gamers-area just-gamers-bg pt-115 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6 col-md-10">
+                    <div class="section-title title-style-three white-title mb-70">
+                        <h2>FEITO DE JOGADORES <span>PARA JOGADORES!</span></h2>
+                        <p>
+                            Essas são as principais soft skills que você irá desenvolver<br />
+                            em nosso curso.
+                        </p>
+                    </div>
+                    <div class="just-gamers-list">
+                        <ul>
+                            <li>
+                                <div class="just-gamers-list-icon">
+                                    <img src="~/img/icon/gamer_list_icon01.png" alt="">
+                                </div>
+                                <div class="just-gamers-list-content fix">
+                                    <h5>Ser um High Elo:</h5>
+                                    <p>
+                                        O curso de League of Legends: Wild Rift é para qualquer um que deseja se tornar um jogador habilidoso nas partidas e que consiga carregar seu time.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="just-gamers-list-icon">
+                                    <img src="~/img/icon/gamer_list_icon02.png" alt="">
+                                </div>
+                                <div class="just-gamers-list-content fix">
+                                    <h5>
+                                        Jogadores iniciantes
+                                    </h5>
+                                    <p>Se você acabou de começar a jogar e não entende tudo que acontece durante uma gameplay, estamos aqui para te ensinar!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="just-gamers-list-icon">
+                                    <img src="~/img/icon/gamer_list_icon03.png" alt="">
+                                </div>
+                                <div class="just-gamers-list-content fix">
+                                    <h5>
+                                        Medo da ranked? Aqui não!
+                                    </h5>
+                                    <p>Tá afim de ser melhor que seus amigos e mostrar seu Diamante 1 para todo mundo? Superar seu medo da ranked? Escolha seu campeão e venha jogar!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6 d-none d-lg-block">
+                    <div class="just-gamers-img">
+                        <img src="~/img/images/just_gamers_img.png" alt="" class="just-gamers-character">
+                        <div class="just-gamers-circle-shape">
+                            <img src="~/img/images/gamers_circle_line.png" alt="">
+                            <img src="~/img/images/gamers_circle_shape.png" alt="" class="rotateme">
+                        </div>
+                        <img src="~/img/images/just_gamers_chart.png" alt="" class="gamers-chart-shape">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+

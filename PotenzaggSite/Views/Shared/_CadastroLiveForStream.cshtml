@@ -1,0 +1,72 @@
+﻿@model PotenzaggSite.Models.Usuario
+
+@{
+    var msg = TempData["Message"] as string;
+}
+
+<style>
+    form label {
+        color: white;
+    }
+</style>
+
+<div class="col-lg-12">
+    @using (Html.BeginForm("LiveForStream", "Curso", FormMethod.Post))
+    {
+        <div class="col-lg-12 text-white form-inscricao">
+            <form asp-action="MentoriaOfLegends" class="third-contact-form text-center text-white ">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group text-white">
+                    <label asp-for="Nome" class="control-label"></label>
+                    <input asp-for="Nome" class="form-control" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+
+                <div class="form-group text-white">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" data-val-email="The Email Address field is not a valid email address." data-val-required="The Email Address field is required." class="form-control" /> 
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group text-white">
+                    <label asp-for="Celular" class="control-label"></label>
+                    <input asp-for="Celular" class="form-control" />
+                    <span asp-validation-for="Celular" class="text-danger"></span>
+                </div>
+                <br>
+
+                <div class="form-check-inline text-white">
+                    <label class="form-check-label text-white">
+                        <input class="form-check-input" asp-for="OptInEmail" /> @Html.DisplayNameFor(model => model.OptInEmail)
+                    </label>
+                </div>
+
+                <div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label text-white">
+                            <input class="form-check-input" asp-for="OptInZap" /> @Html.DisplayNameFor(model => model.OptInZap)
+                        </label>
+                    </div>
+
+                    <br />
+                    <br />
+
+                </div>
+
+                <div class="form-group form-inline text-center">
+                    <input type="submit" id="inscrito" name="inscrito" value="Finalizar Cadastro" class="btn rotated-btn text-center" />
+                </div>
+
+                <div class="form-group">
+                    @if (!string.IsNullOrEmpty(msg))
+                    {
+                        <div class="alert alert-success">
+                            <p style="color: #282828;">@msg</p>
+                        </div>
+                    }
+                </div>
+            </form>
+        </div>
+    }
+</div>
