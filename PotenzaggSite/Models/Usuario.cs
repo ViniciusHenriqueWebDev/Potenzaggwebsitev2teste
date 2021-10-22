@@ -54,6 +54,8 @@ namespace PotenzaggSite.Models
 
         public string UrlTAG { get; set; }
 
+        public string Mensagem { get; set; }
+
         [Display(Name = "Receber notificações no Email")]
         public bool OptInEmail { get; set; }
 

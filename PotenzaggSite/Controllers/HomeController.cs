@@ -8,14 +8,18 @@ using System.Diagnostics;
 using System.Linq;
 using MailChimp.Helper;
 using System;
+using PotenzaggSite.Data;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace PotenzaggSite.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        //       ApplicationDbContext context = new ApplicationDbContext(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
+        private readonly object _context;
+        ApplicationDbContext context;
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -33,10 +37,33 @@ namespace PotenzaggSite.Controllers
             return View();
         }
 
-        public IActionResult Faleconosco()
+        public ActionResult Contato()
         {
+            
             return View();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Contato(Usuario usuario)
+        {
+            if (ModelState.IsValid)
+            {
+                context.Usuarios.Add(usuario);
+                context.SaveChanges();
+                return View();
+            }
+
+            ModelState.Clear();
+            return View("Contato");
+
+            TempData["Message"] = "Sua Inscrição foi concluida com sucesso, aguarde um consultor entrar em contato!";
+
+            return RedirectToAction("Contato", "Home");
+
+        }
+
+
 
 
         public IActionResult Potenzalovers()
@@ -65,8 +92,7 @@ namespace PotenzaggSite.Controllers
             return View();
         }
 
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

@@ -16,11 +16,13 @@
   <ItemGroup>
     <Compile Remove="Controllers\UsuarioController.cs" />
     <Compile Remove="Models\CadastroUsuario.cs" />
+    <Compile Remove="Views\Home\FaleConosco.cshtml.cs" />
     <Compile Remove="Views\Home\Index1.cshtml.cs" />
     <Compile Remove="Views\Home\Index2.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Home\FaleConosco.cshtml" />
     <Content Remove="Views\Home\Index1.cshtml" />
     <Content Remove="Views\Home\Index2.cshtml" />
   </ItemGroup>
@@ -45,6 +47,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\" />
+    <Folder Include="wwwroot\img\images\marketing\" />
   </ItemGroup>
 
 </Project>

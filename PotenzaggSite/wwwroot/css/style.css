@@ -2107,7 +2107,7 @@ ul.minicart .cart-price .new {
 	content: "";
 	background-image: url(../img/images/released_game_brush.png);
 	position: absolute;
-	right: -50px;
+	right: 40px;
 	top: 0;
 	height: 100%;
 	width: 324px;
@@ -2152,8 +2152,8 @@ ul.minicart .cart-price .new {
 }
 .released-game-active .slick-dots {
 	position: absolute;
-	left: 85px;
-	bottom: 100px;
+	left: 50px;
+	bottom: 133px;
 	z-index: 1;
 	display: flex;
 	align-items: center;
@@ -2759,26 +2759,26 @@ ul.minicart .cart-price .new {
 
 /* 14. Just-gamers */
 .just-gamers-bg {
-	background-image: url(../img/bg/just_gamer_bg.jpg);
+	background-image: url(../img/bg/third_contact_bg.jpg);
 	position: relative;
 	background-position: center;
 	background-size: cover;
 	overflow: hidden;
 	z-index: 1;
 }
-.just-gamers-bg::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	right: 0;
-	background-image: url(../img/images/gamers_bg_conve01.png);
-	width: 467px;
-	height: 169px;
-	margin: 0 auto;
-	top: -4px;
-	background-repeat: no-repeat;
-	z-index: -1;
-}
+	.just-gamers-bg::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		/*background-image: url(../img/images/gamers_bg_conve01.png);*/
+		width: 467px;
+		height: 169px;
+		margin: 0 auto;
+		top: -4px;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
 .just-gamers-bg::after {
 	content: "";
 	position: absolute;

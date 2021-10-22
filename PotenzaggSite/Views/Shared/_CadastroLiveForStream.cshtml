@@ -13,7 +13,12 @@
 <div class="col-lg-12">
     @using (Html.BeginForm("LiveForStream", "Curso", FormMethod.Post))
     {
+        @Html.AntiForgeryToken()
+
         <div class="col-lg-12 text-white form-inscricao">
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
             <form asp-action="MentoriaOfLegends" class="third-contact-form text-center text-white ">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
@@ -25,7 +30,7 @@
 
                 <div class="form-group text-white">
                     <label asp-for="Email" class="control-label"></label>
-                    <input asp-for="Email" data-val-email="The Email Address field is not a valid email address." data-val-required="The Email Address field is required." class="form-control" /> 
+                    <input asp-for="Email" data-val-email="The Email Address field is not a valid email address." data-val-required="The Email Address field is required." class="form-control" />
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
 

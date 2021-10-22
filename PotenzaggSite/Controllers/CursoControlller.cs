@@ -48,6 +48,7 @@ namespace PotenzaggSite.Controllers
         {
              if (ModelState.IsValid)
                 {
+
                     _context.Usuarios.Add(usuario);
                     _context.SaveChanges();
 
@@ -116,6 +117,23 @@ namespace PotenzaggSite.Controllers
 
             return RedirectToAction("FreeFire", "Curso");
 
+        }
+
+        public ActionResult MarketingDigital()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult MarketingDigital(Usuario usuario)
+        {
+            var OndeConheceu = new List<string> { "Google", "Facebook", "Instagram", "Streamers", "Outros" };
+            ViewBag.OndeConheceu = OndeConheceu;
+
+            _context.Usuarios.Add(usuario);
+            _context.SaveChanges();
+
+            return RedirectToAction("Marketing Digital", "Curso");
         }
 
     }

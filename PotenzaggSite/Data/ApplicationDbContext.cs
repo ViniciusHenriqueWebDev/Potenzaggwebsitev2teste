@@ -18,6 +18,9 @@ namespace PotenzaggSite.Data
         
         public DbSet<Usuario> Usuarios { get; set; }
 
+        
+        public DbSet<PotenzaggSite.Models.Embaixador> Embaixador { get; set; }
+
 
     }
 }

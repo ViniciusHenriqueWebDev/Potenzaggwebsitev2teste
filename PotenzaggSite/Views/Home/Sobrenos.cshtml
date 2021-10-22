@@ -46,7 +46,7 @@
                             de lançar o curso: <a href="@Url.Action("Streamer", "Home", new { area = "" })">LIVE FOR STREAM</a> e a Mentoria of Legends Wild Rift. 
                         </p>
                         
-                        <a href="#" class="btn btn-style-two">Conheça os cursos</a>
+                        <a href="@Url.Action("Formacoes", "Home", new { area = "" })" class="btn btn-style-two">Conheça os cursos</a>
                     </div>
                 </div>
             </div>
@@ -61,10 +61,6 @@
                 <div class="col-xl-6 col-lg-8">
                     <div class="section-title title-style-three white-title text-center mb-70">
                         <h2>O que <span>fazemos?</span></h2>
-                        <p>
-                            Compete with 100 players on a remote island for winner takes showdown
-                            known issue where certain skin strategic
-                        </p>
                     </div>
                 </div>
             </div>
@@ -75,14 +71,14 @@
                             <img src="img/images/latest_match_thumb01.jpg" alt="">
                         </div>
                         <div class="tournament-schedule-content">
-                            <h3><a href="#">Mentoria <span>of Legends</span></a></h3>
+                            <h3><a href="@Url.Action("MentoriaOfLegends","Curso")">Mentoria <span>of Legends</span></a></h3>
                             <p>
                                 Aprenda de uma Vez a Jogar League of Legends: Wild Rift
                                 com uma visão de Jogador Profissional de eSports, e como consequência eleve seu objetivo
                                 ao tão esperado Challenger!
                             </p>
-                            <div>
-                                <a href="#">Saber mais</a>
+                            <div class="tournament-schedule-meta">
+                                <a href="@Url.Action("MentoriaOfLegends","Curso")">Saber mais</a>
                             </div>
                         </div>
                     </div>
@@ -93,14 +89,15 @@
                             <img src="img/images/latest_match_thumb02.jpg" alt="">
                         </div>
                         <div class="tournament-schedule-content">
-                            <h3><a href="#">LIVE FOR <span>STREAM</span></a></h3>
+                            <h3><a href="@Url.Action("LiveForStream","Curso")">LIVE FOR <span>STREAM</span></a></h3>
                             <p>
-                                O curso Streamer Profissional é indicado para qualquer pessoa que tem o desejo de profissionalizar seu canal do Youtube e Stream, seja ela iniciante ou avançada.
+                                O curso Streamer Profissional é indicado para qualquer pessoa que tem o 
+                                desejo de profissionalizar seu canal do Youtube e Stream, seja ela iniciante ou avançada.
 
                             </p>
                             <div class="tournament-schedule-meta">
                               
-                                <a href="#">Saber mais</a>
+                                <a href="@Url.Action("LiveForStream","Curso")">Saber mais</a>
                             </div>
                         </div>
                     </div>
@@ -111,11 +108,11 @@
                             <img src="img/images/latest_match_thumb03.jpg" alt="">
                         </div>
                         <div class="tournament-schedule-content">
-                            <h3><a href="#">MARKETING <span>DESCOMPLICADO</span></a></h3>
+                            <h3><a href="@Url.Action("MarketingDigital","Curso")">MARKETING <span>DESCOMPLICADO</span></a></h3>
                             <p>Aprenda na prática tudo que você precisa saber para iniciar no universo do marketing digital, com estratégias essenciais de um gestor de marketing digital e conteúdos que irão enriquecer o seu negócio.</p>
                             <div class="tournament-schedule-meta">
                              
-                                <a href="#">Saber mais</a>
+                                <a href="@Url.Action("MarketingDigital","Curso")">Saber mais</a>
                             </div>
                         </div>
                     </div>
@@ -126,14 +123,14 @@
                             <img src="img/images/latest_match_thumb04.jpg" alt="">
                         </div>
                         <div class="tournament-schedule-content">
-                            <h3><a href="#">FREE FIRE <span>DO ZERO AO COMPETITIVO</span></a></h3>
+                            <h3><a href="@Url.Action("LiveForStream","Curso")">FREE FIRE <span>DO ZERO AO COMPETITIVO</span></a></h3>
                             <p>
                                 Pegue seu paraquedas, pule do avião e se jogue nessa experiência! Se torne o sobrevivente do mais famoso jogo mobile! Tenha aula com streamers profissionais, aprenda sobre os mapas, armas, modos de jogo e mais, tudo com muita diversão! Se inscreva para chegar no Mestre!
 
                             </p>
                             <div class="tournament-schedule-meta">
                              
-                                <a href="#">Saber mais</a>
+                                <a href="@Url.Action("FreeFire","Curso")">Saber mais</a>
                             </div>
                         </div>
                     </div>
